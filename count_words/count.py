@@ -7,7 +7,7 @@ def count_words(sentence):
 
     sentence = sentence.lower()
     for word in sentence.split():
-        word = word.strip(string.punctuation)
+        word = word.strip(string.punctuation + '¿')
         word_counts[word] = word_counts.get(word, 0) + 1
 
     return word_counts
